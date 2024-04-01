@@ -155,14 +155,10 @@ img {
   align-items: center;
 }
 
-.popup .icon {
-  transition: 100ms ease;
-  color: white;
-  cursor: pointer;
-  font-size: 1.25rem;
+.social-media-icon {
+  min-width: 20px;
 }
-
-.popup .icon:hover {
+.popup .social-media-icon:hover {
   opacity: 0.75;
   scale: 1.105;
 }
