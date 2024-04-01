@@ -89,6 +89,7 @@ img {
 }
 
 .profile-name {
+  font-weight: 700;
   color: var(--dark-grayish-blue);
 }
 
