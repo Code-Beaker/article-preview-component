@@ -88,6 +88,14 @@ img {
   border-radius: 50%;
 }
 
+.profile-name {
+  color: var(--dark-grayish-blue);
+}
+
+.profile-date {
+  color: var(--grayish-blue);
+}
+
 .share-btn {
   display: block;
   border: none;
