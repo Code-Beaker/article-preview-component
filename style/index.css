@@ -180,3 +180,25 @@ img {
   /* outline: 1px dotted; */
   outline: 2px dotted;
 }
+
+@media screen and (max-width: 700px) {
+  .container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr;
+    max-height: 45rem;
+    max-width: 25rem;
+    /* outline: 1px dotted; */
+  }
+
+  .img-wrapper {
+    min-height: 15rem;
+  }
+
+  .title {
+    font-size: 1rem;
+  }
+
+  .popup {
+    left: -20;
+  }
+}
