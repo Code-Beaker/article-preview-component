@@ -1,0 +1,150 @@
+:root {
+  --dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+* {
+  font-family: "Manrope", sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+img {
+  max-width: 100%;
+}
+
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: var(--light-grayish-blue);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  max-width: 60rem;
+  overflow: hidden;
+  border-radius: 1rem;
+  background: white;
+  /* max-height: 30rem; */
+  /* gap: 4rem; */
+  position: relative;
+}
+
+.img-wrapper {
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-height: 30rem;
+}
+
+.image {
+  min-width: 32.5rem;
+}
+
+.text-wrapper {
+  margin-left: 1rem;
+  /* outline: 1px dotted; */
+}
+
+.text-content {
+  /* outline: 1px dotted; */
+  padding: 3rem;
+}
+
+.title {
+  word-wrap: break-word;
+  font-size: 1.75rem;
+  color: var(--dark-grayish-blue);
+}
+
+.para {
+  color: var(--desaturated-dark-blue);
+  margin-top: 1.25rem;
+  font-size: 18px;
+}
+
+.bottom-wrapper {
+  display: flex;
+  justify-content: space-between;
+  max-width: 35rem;
+  /* outline: 1px dotted; */
+  padding: 2rem;
+}
+
+.personal-info {
+  display: flex;
+  gap: 1rem;
+}
+
+.avatar {
+  max-width: 50px;
+  border-radius: 50%;
+}
+
+.share-btn {
+  display: block;
+  border: none;
+  width: 50px;
+  height: 50px;
+  cursor: pointer;
+  border-radius: 50%;
+}
+
+#shareIcon {
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+/* popup */
+.popup {
+  position: absolute;
+  background: var(--dark-grayish-blue);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  bottom: 22%;
+  right: 5%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  gap: 1rem;
+  opacity: 0;
+  scale: 0.95;
+  transition: 100ms ease;
+}
+
+.popup-show {
+  scale: 1;
+  opacity: 1;
+  /* display: flex; */
+}
+
+.popup-text {
+  color: var(--grayish-blue);
+  letter-spacing: 2px;
+}
+
+.popup .icons-wrapper {
+  display: flex;
+  gap: 0.75rem;
+  justify-content: center;
+  align-items: center;
+}
+
+.popup .icon {
+  transition: 100ms ease;
+  color: white;
+  cursor: pointer;
+  font-size: 1.25rem;
+}
+
+.popup .icon:hover {
+  opacity: 0.75;
+  scale: 1.105;
+}
