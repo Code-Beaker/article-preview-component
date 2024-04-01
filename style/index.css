@@ -33,7 +33,7 @@ img {
   background: white;
   /* max-height: 30rem; */
   /* gap: 4rem; */
-  position: relative;
+  /* position: relative; */
 }
 
 .img-wrapper {
@@ -95,11 +95,17 @@ img {
   height: 50px;
   cursor: pointer;
   border-radius: 50%;
+  position: relative;
+  z-index: 5;
 }
 
 #shareIcon {
   font-weight: 700;
   font-size: 1.5rem;
+}
+
+.share-btn:focus {
+  outline: 2px dotted;
 }
 
 /* popup */
@@ -109,18 +115,21 @@ img {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  bottom: 22%;
-  right: 5%;
+  bottom: 0;
+  top: 0;
+  /* left: 0; */
+  right: 0;
   padding: 1rem;
   border-radius: 0.5rem;
   gap: 1rem;
   opacity: 0;
   scale: 0.95;
   transition: 100ms ease;
+  z-index: 10;
 }
 
 .popup-show {
-  scale: 1;
+  scale: 1.1;
   opacity: 1;
   /* display: flex; */
 }
@@ -147,4 +156,27 @@ img {
 .popup .icon:hover {
   opacity: 0.75;
   scale: 1.105;
+}
+
+.dividor {
+  background: white;
+  height: 100%;
+  position: relative;
+  width: 1px;
+  display: block;
+}
+
+.popup .close-btn {
+  display: block;
+}
+
+#closeBtn {
+  font-size: 1.5rem;
+  color: #aa0000;
+  display: block;
+}
+
+#closeBtn:focus {
+  /* outline: 1px dotted; */
+  outline: 2px dotted;
 }
